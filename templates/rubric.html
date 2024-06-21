@@ -1,0 +1,24 @@
+{% extends 'layouts/base_layout.html' %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container container-content">
+        <div class="row">
+            <div class="col col-12">
+                <h1 class="rubric-heading">
+                    Full-Paper Review Rubric
+                </h1>
+                <p class="rubric-text-before-heading">
+                    Please check the <b>1st</b> and <b>2nd page</b> of the document placed below for <b>Criteria.</b> 
+                <div class="embedded-pdf-center">
+                    <iframe
+                        src="/static/rubric_pdf/Full-Paper Review Rubric_CIRCH 2024.pdf"
+                        width="800"
+                        height="500"
+                        style="border: none;"
+                    ></iframe>
+                </div>
+{% endblock %}

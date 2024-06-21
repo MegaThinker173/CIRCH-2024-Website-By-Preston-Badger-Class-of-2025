@@ -1,0 +1,334 @@
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.text-bold-space {
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.logo-img {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding: 8px 0;
+}
+
+.navbar {
+  padding: unset;
+}
+
+.event-name {
+  /*font-family: Lato;*/
+  font-weight: bold;
+  font-size: 65px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.event-description {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.event-date {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+}
+
+.text-white {
+  color: white;
+  padding-top: 60px;
+}
+
+.header-image {
+  background-position: center center;
+  background-image: url('/static/images/concordia_hanoi.jpeg');
+  background-size: cover;
+  position: relative;
+  /*z-index: 9999;*/
+}
+ 
+.header-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /*z-index: 9999;*/
+}
+
+.image-poster {
+  width: 100%;
+  height: auto;
+}
+
+.container-content {
+  font-size: 18px;
+  padding: 30px 120px; /* padding: top-bottom left-right*/
+}
+
+.news-content {
+  font-size: 18px;
+  padding-right: 130px;
+}
+
+.text-heading {
+  border-top: 5px solid rgba(240,240,240,1);
+  border-bottom: 5px solid rgba(240,240,240,1);
+  /*font-family: Arvo;*/
+  padding: 5px 0px;
+  font-size: 34pt; /* Website defined*/
+  font-weight: bold;
+  color: rgba(26,133,2,1);
+  margin-bottom: 14px;
+}
+
+.text-after-heading {
+  padding-top: 14px;  
+}
+
+.text-after-heading p {
+  margin-top: 18.5px;
+  margin-bottom: 18.5px;
+}
+
+.logo-midpage {
+  text-align: center;
+}
+
+.logo-midpage img {
+  width: 365.070px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+.call-for-papers-text-after-heading {
+  font-size: 21pt;
+  /*font-family: Lato;*/
+  color: rgba(33,33,33,1);
+}
+
+.embedded-pdf-center {
+  text-align: center;
+}
+
+.active {
+  border-bottom: 8px solid #fff;
+}
+
+.navbar-brand {
+  height: 47px;
+}
+
+.paper-file-submission-button {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #eaecef;
+  height: 38px;
+  text-align: center;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.heading {
+  color: rgba(26, 133, 2, 1);
+  font-family: Montserrat, sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
+  line-height: 1.56;
+  margin-top: -10px;
+}
+
+.text-before-heading {
+  margin-bottom: 15px;
+}
+
+.organize-links li {
+  height: 40px;
+}
+
+.organizing-committee-title {
+  color: rgba(26, 133, 2, 1);
+  font-size: 29pt;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.44;
+}
+
+.profile-image img {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.section-content {
+  margin-top: 40px;
+}
+
+.organizing-committee-name {
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.organizing-committee-message {
+  color: #000000;
+  font-family: Arial;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 120px;
+  margin-top: 25px;
+}
+
+.departments-committee-title {
+  color: rgba(26, 133, 2, 1);
+  font-size: 20pt;
+  font-weight: 600; /* >=500 = bold, <500 = normal; font-weight is always x00: 100, 200, 300, ...*/
+  line-height: 1.56;
+  margin-top: 30px;
+}
+
+.communications-team-title {
+  color: #38761d;
+  font-family: 'Archivo Black', Arial;
+  font-size: 18pt;
+  font-variant: normal;
+  font-weight: 600;
+  vertical-align: baseline;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.communications-team-name {
+  color: rgba(33, 33, 33, 1);
+  font-size: 12pt;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.communications-team-message {
+  color: #000000;
+  font-size: 10.0pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  vertical-align: baseline;
+  line-height: 1.75;
+}
+
+.communcations-team-image {
+  width: 100%;
+}
+
+.mb-2 {
+  margin-bottom: 40px !important;
+}
+
+.program-committee-title {
+  color: rgba(26, 133, 2, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  font-weight: 600;
+  line-height: 1.56;
+  margin-bottom: 10px;
+}
+
+.program-committee-names {
+  color: rgba(33, 33, 33, 1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 4;
+}
+
+.organize-last-editions  {
+  color: rgba(26, 133, 2, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
+  line-height: 3;
+}
+
+.organize-last-editions a {
+  color: rgba(26, 133, 2, 1);
+}

@@ -1,0 +1,47 @@
+{% extends 'layouts/base_layout.html' %}
+
+{% block content %}
+    <form method="POST" enctype="multipart/form-data" action="/presenter_register/presenter-register-action">
+        <div class="container">
+            <h1>Presenter Registration</h1>
+            <p>Please fill in this form to register as a presenter.</p>
+
+            {% if error_message %}
+                <p class="error-message">{{ error_message }}</p>
+            {% endif %}
+            <hr>
+            <div class="mb-3">
+                <label class="form-label" for="presenter-full-name"><b>Presenter's Full Name</b></label>
+                <input class="form-control" value="{{register_form['presenter-full-name']}}" type="text" placeholder="Enter Presenter's Full Name" name="presenter_full_name" id="presenter_full_name">
+            </div>
+            <label for="presenter-email"><b>Presenter's Email</b></label>
+            <input value="{{register_form['presenter-email']}}" type="text" placeholder="Enter Presenter's Email" name="presenter_email" id="presenter_email">
+
+            <label for="presenter-password"><b>Presenter's Password</b></label>
+            <input value="{{register_form['presenter-email']}}" type="password" placeholder="Enter Presenter's Password" name="presenter_password" id="presenter_password">
+
+            <label for="presenter-password-repeat"><b>Repeat Presenter's Password</b></label>
+            <input type="password" placeholder="Repeat Presenter's Password" name="presenter_password_repeat" id="presenter_password_repeat">
+
+            <label for="presenter-phoneNumber"><b>Presenter's Phone Number</b></label>
+            <input value="{{register_form['presenter-phoneNumber']}}" type="text" placeholder="Enter Presenter's Phone Number" name="presenter_phoneNumber" id="presenter_phoneNumber">
+
+            <label for="presenter-submitPaper"><b>Submit Paper</b></label>
+            <div class="input-group mb-3">
+                <input id="paper_file_id" hidden class="paper-file-submission" type="file" name="paper_file" onchange="updateFileName()">
+                <label class="paper-file-submission-button" for="paper_file_id">Choose File</label>
+            </div>
+
+            <script>
+                function updateFileName() {
+                    var paper_file = document.getElementById('paper_file_id');
+                    var paper_file_name = paper_file.files[0].name;
+                    var paper_file_label = document.getElementsByClassName('paper-file-submission-button')[0];
+                    paper_file_label.innerHTML = paper_file_name;
+                }
+            </script>
+
+            <p>By registering as a presenter you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="presenter_registerbtn" id="presenter_registerbtn">Register As a Presenter</button>
+{% endblock %}

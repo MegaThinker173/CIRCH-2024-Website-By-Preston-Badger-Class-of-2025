@@ -1,0 +1,55 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Concordia CIRCH Website</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<nav class="navbar navbar-expand-lg navbar-success bg-success">
+    <a class="navbar-brand text-light" href="#">
+      <img class="logo-img" src="{{ url_for('static', filename='images/circh_2024.png') }}">
+      <p class="logo-text">CIRCH 2024</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto a">
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'home' %} active {% endif %} " href="/home">Home <span class="sr-only"></span></a>
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'call-for-papers' %} active {% endif %} " href="/call-for-papers">Call for Papers</a>
+        <a class="nav-item nav-link text-light text-bold-space" href="#">Keynote Speakers</a>
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'presenter-registration' %} active {% endif %} " href="/presenter-registration">Registration</a>
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'rubric' %} active {% endif %} " href="/rubric">Rubric</a>
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'faq' %} active {% endif %} " href="/faq">FAQ</a>
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'schedule' %} active {% endif %} " href="/schedule">Schedule</a>
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'organizers' %} active {% endif %} " href="/organizers">Organizers</a>
+        <a class="nav-item nav-link text-light text-bold-space {% if route_name == 'last-editions' %} active {% endif %} " href="/last-editions">Last Editions</a>
+      </div>
+    </div>
+</nav>
+<header class="header-image">
+  <div class="container px-5 wrapper">
+    <div class="dark-bg"></div>
+    <div class="row gx-5 justify-content-center main-text">
+        <div class="col-lg-8">
+          <div class="text-center my-5 text-white">
+              <h1 class="event-name">CIRCH 2024</h1>
+              <p class="event-description">Concordia International Research Conference Hanoi</p>
+              <p class="event-date">April 6, 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<body>
+    <section class="content">
+        <header>
+            {% block header %}{% endblock %}
+        </header>
+    </section>
+    <section>
+        {% block content %}{% endblock %}
+    </section>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </footer>
+</body>

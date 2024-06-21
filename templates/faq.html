@@ -1,0 +1,25 @@
+{% extends 'layouts/base_layout.html' %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container container-content">
+        <div class="row">
+            <div class="col col-12">
+                <h1 class="heading">
+                    Frequently Asked Questions List
+                </h1>
+                <p class="text-before-heading">
+                    Please check the document below for the list of Frequently Asked Questions and their following answers!
+                    In case of any further inquiries, please send these questions to <a href="mailto:circh@concordiahanoi.org">circh@concordiahanoi.org</a>.
+                <div class="embedded-pdf-center">
+                    <iframe
+                        src="/static/faq_pdf/CIRCH Frequently Asked Questions 2024.pdf"
+                        width="800"
+                        height="500"
+                        style="border: none;"
+                    ></iframe>
+                </div>
+{% endblock %}
