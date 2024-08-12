@@ -1,4 +1,4 @@
-# CIRCH 2024 Website
+# CIRCH 2024 Website (By: Preston Badger — Class of 2025)
 
 ## Home Page
 Contains important news and updates, the CIRCH flyer, and our purpose — the mission and vision statements of CIRCH.
